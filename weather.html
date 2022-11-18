@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Chakra Petch'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="src/glitch.css" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgs/cyberpunk.ico">
+    <title>My Webpage</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+
+            <div class="container-fluid">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Navbar
+                </a>
+                <ul class="dropdown-menu wide" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item " href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="news.html">News</a></li>
+                    <li><a class="dropdown-item" href="weather.html">Weather</a></li>
+                    <li><a class="dropdown-item" href="about.html">About me</a></li>
+                </ul>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" aria-labelledby="navbarDropdown2">
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="news.html">News</a></li>
+                                <li><a class="dropdown-item" href="weather.html">Weather</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="weather.html">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <div id = "glitch-item">
+        <div class="container" id="glitch">
+
+            <div class="sound-bar">
+                <div class="ball"></div>
+                <i class="fa fa-volume-up"></i>
+            </div>
+
+            <div id="image-container">
+                <img class="glitch-image" src="imgs/mask.png" alt="glitch">
+                <img class="glitch-image2" src="imgs/mask2.png" alt="glitch">
+            </div>
+
+            <h1 class="time"></h1>
+            <div class="weather">
+                <input class="weather-search" type="text" placeholder="Enter City" />
+                <div class="search"><i class="fa fa-search"></i></div>
+                <h5 class="location"></h5>
+                <h3 class="temperature"></h3>
+                <h5 class="status"></h5>
+            </div>
+        </div>
+        <div class="glitch-sound"></div>
+    </div>
+    <script src="src/glitch.js"></script>
+
+    </main>
+
+
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-5">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="news.html" class="nav-link p-0 ">News</a></li>
+                        <li class="nav-item mb-2"><a href="weather.html" class="nav-link p-0 ">Weather</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 ">About Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-5 offset-2">
+                    <h5>Subscribe to our newsletter</h5>
+                    <p class="smalltext">Monthly digest of whats new and exciting from us.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p class="smalltext">© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a href="https://github.com/AnastasiiaPirus"><i class="fa fa-github"></i></a></li>
+                    <li class="ms-3"><a href="https://www.linkedin.com/in/anastasia-pirus/"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li class="ms-3"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

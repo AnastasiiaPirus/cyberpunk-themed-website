@@ -1,0 +1,274 @@
+
+$color-1: #003162;
+$color-2: #0c9df4;
+$color-3: #ffcddb;
+$color-4: #ff577e;
+$color-5: #ff184d;
+
+$color-8: #01203e;
+$gradient: linear-gradient(0deg, rgba(125, 28, 69, 1) 0%, rgba(1, 32, 62, 1) 100%);
+
+body {
+    background: $gradient;
+    min-height: 100vh;
+}
+
+nav {
+    // background: $gradient;
+    background-size: cover;
+    height: 110px;
+
+}
+
+.navbar-expand-lg {
+    position: relative;
+    z-index: 10000;
+}
+
+
+.navbar-expand-lg .nav-item {
+    border-left: 20px solid;
+    border-right: 20px solid;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-image-source: url('../imgs/Button_white.png');
+    opacity: 70%;
+    border-image-slice: 20%;
+    filter: drop-shadow(5px 2px 0 rgba(0, 0, 0, 0));
+    align-self: start;
+    max-height: 60px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.navbar-expand-lg .nav-item .nav-link {
+
+    font-size: 0.6cm;
+    color: $color-3;
+    padding-top: 10px;
+    font-family: Orbitron;
+    height: 60px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-top: -5px;
+
+}
+
+.navbar-expand-lg .nav-item:hover {
+    filter: drop-shadow(5px 2px 10px $color-5);
+    opacity: 100%;
+
+}
+
+.navbar-expand-lg .nav-item .nav-link:hover {
+    color: $color-5;
+    opacity: 100%;
+}
+
+
+.navbar-expand-lg .nav-item:active {
+    border-image-source: url('../imgs/Button_active.png');
+    filter: drop-shadow(1px 1px 15px $color-4);
+    opacity: 100%;
+}
+
+.navbar-expand-lg .nav-item .nav-link:active {
+    background-color: $color-5;
+    color: $color-8;
+
+}
+
+.navbar-expand-lg .dropdown-menu {
+    background-color: $color-4;
+    border-radius: 0;
+    margin-left: -17px;
+    position: relative;
+    z-index: 10000!important;
+}
+
+
+.navbar-expand-lg .dropdown-item {
+    color: $color-8;
+    font-family: "Chakra Petch";
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.navbar-expand-lg .dropdown-item:hover {
+    background-color: $color-5;
+    color: $color-8;
+}
+
+.navbar-expand-lg .dropdown-item:active {
+    background-color: $color-5;
+    color: $color-8;
+}
+
+
+@media (min-width: 992px) {
+    .navbar.navbar-expand-lg .dropdown-toggle#navbarDropdownMenuLink {
+        visibility: hidden;
+        visibility: collapse;
+        width: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        background: $gradient;
+        background-size: cover;
+        height: 80px;
+    }
+}
+
+.nav-link#navbarDropdownMenuLink {
+
+    height: 50px;
+    font-size: 0.6cm;
+    color: $color-3;
+    background-color: $color-8;
+    font-family: Orbitron;
+    filter: drop-shadow(5px 2px 0 hsla(0, 0, 0, 0));
+    text-align: center;
+    width: 100%;
+
+}
+
+@media (max-width: 992px) {
+    .navbar.navbar-expand-lg .dropdown-menu#navbarDropdownMenuLink {
+        width: 100%;
+    }
+}
+
+.nav-link#navbarDropdownMenuLink:hover {
+    color: $color-5;
+    filter: drop-shadow(5px 2px 0 $color-5);
+
+}
+
+.navbar-expand-lg .dropdown-menu.wide {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 0.5cm;
+
+}
+
+.list-unstyled i {
+    font-size: 36px;
+    color: $color-5;
+}
+
+footer .row h5 {
+    color: $color-5;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+
+footer .row li {
+    font-family: "Chakra Petch";
+
+    font-size: 18px;
+}
+
+footer .row a {
+    color: $color-3;
+
+}
+
+p.smalltext {
+    font-family: "Chakra Petch";
+    color: $color-3;
+    font-size: small;
+}
+
+footer.py-5 {
+    padding-bottom: 0px !important;
+}
+
+footer .d-flex.py-4 {
+    padding-bottom: 0px !important;
+}
+
+footer .d-flex.my-4 {
+    margin-bottom: 0px !important;
+}
+
+.card {
+    border: 5px solid;
+    border-image-source: url('../imgs/Image_Frame_Pink.png');
+    border-image-slice: 1.6%;
+    background-color: hsla(0, 0, 0, 0);
+    position: relative;
+    z-index: -100;
+    // filter: drop-shadow(5px 2px 0 rgba(0, 0, 0, 0));
+}
+
+
+.card>.card-body {
+    background-color: rgba(255, 255, 255, 0.13);
+    font-family: "Chakra Petch";
+    border-radius: 0px 0px 9px 9px;
+}
+
+.card .card-title {
+    color: $color-3;
+    filter: drop-shadow(0px 0px 5px $color-3);
+    border-bottom: $color-3 solid 2px;
+}
+
+.card .card-text {
+    color: $color-3;
+    filter: drop-shadow(0px 0px 3px $color-5);
+}
+
+.card img {
+    border-radius: 9px 9px 0px 0px;
+}
+
+.carousel {
+    position: relative;
+    z-index: -1;
+}
+
+main.cards {
+    padding: 0 10px;
+}
+
+#aboutMe {
+    background-color: rgba(0, 0, 0, 0.219);
+    width: 100vw;
+    // min-height: fit-content!important;
+    min-height: calc(100vh - 100px - 280px);
+    padding: 20px;
+    position: relative;
+}
+
+#aboutMe h1 {
+    color: $color-3;
+    font-family: Orbitron;
+}
+#aboutMe p {
+    color: $color-3;
+    font-family: Chakra Petch;
+}
+#aboutMe h1 span {
+    color: $color-5;
+}
+#aboutMe p span {
+    color: $color-4;
+}
+
+#aboutMe a {
+    color: $color-4;
+}
+#aboutMe a:hover {
+    color: $color-5;
+}
+
+
+
+#aboutMe img {
+    max-height: 300px;
+}
